@@ -1,0 +1,367 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #fff;
+}
+
+.topPromo{
+    width: 100%;
+    background-color: #C85858;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topPromo p{
+    margin-top: 0.7em;
+}
+
+nav{
+    height: 4em;
+    background-color: #F1A1A1;
+    transition: background-color 0.4s ease;
+}
+
+nav:hover{
+    background-color: #C85858;
+}
+
+nav:hover .nav-link{
+    color: #FFF;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #000;
+    transition: font-size 0.4s ease, color 0.4s ease;
+    margin-top: 0.3em;
+}
+
+.nav-link:hover{
+    color: #495057;
+}
+
+.nav #navLogo{
+    margin-top: 0.8em;
+    margin-right: -0.6em;
+}
+
+.navScrolled{
+    background-color: #C85858;
+    color: #FFF;
+    position: fixed;
+    margin-top: -3em;
+    width: 100%;
+    z-index: 999;
+    box-shadow: 0px 0px 15px #000;
+}
+
+.navScrolled .nav-link{
+    color: #FFF;
+}
+
+.navScrolled .nav-link:hover{
+    color: #b5b5b5;
+}
+
+.bannerContainer{
+    width: 100%;
+    height: 85vh;
+}
+
+.banner{
+    width:  100%;
+    height: 100%;
+    background-size: cover;
+    color: #893D3D;
+    font-family: 'EB Garamond', serif;
+    background-position: 69%;
+    display: flex;
+    align-items: center;
+}
+
+.bannerText p{
+    font-size: 3.6em;
+    font-weight: 700;
+    margin-top: -8%;
+}
+
+.topBanUpd{
+    margin-top: 4em;
+}
+
+.banner2{
+    background-image: url(banner1.png);
+    background-size: cover;
+}
+
+.banner2Text{
+    margin-top: 1em;
+    margin-left: 3em;
+}
+
+#banBtn{
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background-color: #C85858;
+    color: #FFF;
+    transition: all 0.5s ease;
+    margin-right: 1em;
+    margin-top: -100%;
+}
+
+#banBtn:hover{
+    background-color: #FFF;
+    color: #C85858;
+}
+
+#about{
+    font-family: 'Poppins', sans-serif;
+    color: #FFF;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    background-color: #893D3D;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+#about h2{
+    font-family: 'EB Garamond', serif;
+    width: 10em;
+    font-size: 3em;
+    margin-top: -.3em;
+}
+
+#about #aboutTitle p{
+    width: 23em;
+    font-size: 1.1em;
+    margin-top: -0.5em;
+}
+
+#about .aboutFactCont{
+    margin-left: 4em;
+    margin-right: 4em;
+}
+
+#about .aboutFactCont .aboutFact h6{
+    font-weight: bold;
+    margin-bottom: -0.01em;
+    font-size: 1.6em;
+}
+
+#about .aboutFactCont .aboutFact p{
+    font-size: 1.1em;
+}
+
+#rating h3{
+    font-size: 2.5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+#rating{
+    width: 100%;
+}
+
+#rating .swiper{
+    width: 100%
+}
+
+#rating span{
+    color: #C85858;
+}
+
+.ratingCard{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-top: 1em;
+    width: 20em;
+    height: 14em;
+    color: #FFF;
+    background-color: #C85858;
+    margin-left: 2em;
+}
+
+.ratingStars{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: -0.5em;
+    margin-bottom: 0.4em;
+}
+
+.ratingCard .reviewer{
+    font-size: 1.3em;
+    margin-bottom: -0.01em;
+}
+
+.ratingCard .reviewSource{
+    font-size: 0.8em;
+}
+
+.ratingCard .ratingStars .fa-star{
+    margin-left: 0.1em;
+    margin-right: 0.1em;
+    color: #FFF !important;
+}
+
+.swiper-button-next{
+    color: #893D3D;
+}
+
+.swiper-button-prev{
+    color: #893D3D;
+}
+
+.menuCard{
+    width: 16em;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.menuCard .menuCardText{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 0.2em;
+}
+
+.menuCard img{
+    width: 16em;
+    height: 16em;
+    transition: all 0.4s ease;
+}
+
+.menuCard img:hover{
+    box-shadow: 0px 0px 7px #000;
+}
+
+.menuContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.5em;
+}
+
+#menu h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+#menuBtnCont{
+    width: 100%;
+
+}
+
+#menuBtn{
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    background-color: #C85858;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #FFF;
+    transition: all 0.5s ease;
+    margin-right: 1em;
+    margin-top: 0.1em;
+    margin-left: 42em;
+}
+
+#menuBtn:hover{
+    background-color: #893D3D;
+    color: #FFF;
+    border: none;
+}
+
+#promotion{
+    width: 80%;
+    height: 21em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F1A1A1;
+    margin-left: 10em;
+    margin-top: 2em;
+    background-image: url(banner2.png);
+    background-size: cover;
+    color: #893D3D;
+}
+
+#promotion h1{
+    font-family: 'EB Garamond', serif;
+    font-size: 3.5em;
+    font-weight: bold;
+    margin-bottom: -0.1em;
+}
+
+#promotion p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1em;
+}
+
+.promotionText #banBtn{
+    margin-left: 6.5em;
+}
+
+.promotionText #banBtn:hover{
+    background-color: #893D3D;
+    color: #FFF;
+}
+
+footer{
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 4em;
+    height: 17em;
+    background-color: #C85858;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerCont{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    margin-bottom: -0.1em;
+}
+
+footer h3{
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+footer #footerCont h3{
+    margin-bottom: -0.1em;
+}

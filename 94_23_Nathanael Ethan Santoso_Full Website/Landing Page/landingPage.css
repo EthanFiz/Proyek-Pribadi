@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body{
+    background-image: url("mainBanner.png");
+    background-size:100%;
+    background-repeat: no-repeat;
+}
+
+nav{
+    margin-top: -2em;
+}
+
+.nav-link{
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #000;
+    transition: font-size 0.4s ease, color 0.4s ease;
+    margin-top: 2em;
+}
+
+.nav-link:hover{
+    color: #495057;
+}
+
+.nav #navLogo{
+    margin-top: 2.8em;
+    margin-right: -0.6em;
+}
+
+#banText{
+    margin-left: 3em;
+    margin-top: 7em;
+}
+
+#banText h1{
+    font-family: 'Noto Serif', serif;
+    font-weight: 800;
+    font-size: 3.5em;
+    color: #893D3D;
+}
+
+#banText h5{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.4em;
+    color: #C85858;
+    margin-left: 0.1em;
+}
+
+#banText p{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    width: 550px;
+    margin-left: 0.2em;
+}
+
+#banText #banImg{
+    margin-left: -1.5em;
+}
+
+#banBtn{
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    background-color: #C85858;
+    color: #FFF;
+    transition: box-shadow 0.4s ease;
+    margin: 0.5em;
+}
+
+#banBtn:hover{
+    box-shadow: 0px 0px 7px #000;
+}
+
+#banBtns{
+    display: flex;
+    align-items: center;
+    padding: 0.3em 1em 1em 0.3em;
+    margin-top: -0.4em;
+}
+
+#banBtns p{
+    margin-right: -32em;
+    margin-top: 0.7em;
+}

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="shopPage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--NAVBAR-->
+    <nav>
+        <ul>
+            <li><a href="../HOME/home.html" target="_blank" class="mainLink"><img src="pokezard.png" width="70" height="70"></a></li>
+            <li>
+                <a href="#" class="mainLink">Products▾</a>
+                <ul class="dropdown">
+                    <li><a href="shopPage.html" target="_blank">Plush</a></li>
+                    <li><a href="shopPage.html" target="_blank">Action Figures</a></li>
+                    <li><a href="shopPage.html" target="_blank">Shirts</a></li>
+                </ul>
+            </li>
+            <li><a class="mainLink" href="#contact">Contact</a></li>
+            <li><a href="#" class="mainLink cart"><img id="cartImg" src="myCart.png" width="50" height="50">My Cart</a></li>          
+        </ul>
+        <div id="specialMessage">
+            <p>Discover our limited edition seasonal Christmas products on a special price! <a href="#">Click here for details</a></p>
+        </div>
+    </nav>
+    <!--NAVBAR-->
+    <div id="container">
+        <div class="filter">
+            <p class="filterTitle">FILTER BY ▾</p>
+            <hr>
+            <p class="filterSubTitle">POKÉMON NAME</p>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Gengar</label>
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Pikachu</label>
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Garchomp</label>
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Charizard</label>
+            </div>
+            <hr>
+
+            <p class="filterSubTitle">REGION</p>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Kanto</label>
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Johto</label>
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Hoenn</label>
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Sinnoh</label>
+            </div>
+            <hr>
+
+            <p class="filterSubTitle">CATEGORY</p>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Hats</label>
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Bags</label>
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Extraordinary Gifts</label>
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Plush</label>
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Keychains</label>
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Figurines</label>
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Pikachu Plush</label>
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Valentines</label>
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Pokemon Trainers</label>
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Winter Exclusive</label>
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Sinnoh Collection</label>
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Champions</label>
+            </div>
+            <hr>
+
+            <p class="filterSubTitle">POKÉMON TYPE</p>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Water</label>
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Fire</label>
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Ground</label>
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Dragon</label>
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Steel</label>
+            </div>
+            <div class="wrapper">
+                <input type="checkbox" id="check">
+                <label for="check">Bug</label>
+            </div>
+            <hr>
+
+            <p class="filterSubTitle">PRICE</p>
+            <div class="wrapper">
+                <label>$</label>
+                <input type="text" value="0">
+                <label>TO</label>
+                <input type="text">
+            </div>
+            
+        </div>
+        <div id="subContainer">
+            <h1>ALL PRODUCTS</h1>
+            <div class="cardContainer">
+                <div class="card">
+                    <img class="imgCard" src="cards/cardImg1.jpg">
+                    <p align="center" class="cardText">Jackets</p>
+                </div>
+                <div class="card">
+                    <img class="imgCard" src="cards/cardImg2.jpg">
+                    <p align="center" class="cardText">Elite TCG Trainer Box</p>
+                </div>
+                <div class="card">
+                    <img class="imgCard" src="cards/cardImg3.jpg">
+                    <p align="center" class="cardText">Figurines</p>  
+                </div>
+                <div class="card">
+                    <img class="imgCard" src="cards/cardImg4.jpg">
+                    <p align="center" class="cardText">Sitting Cuities Plush</p>
+                </div>
+            </div>
+            <div class="productHeader">
+                <p><b>PRODUCTS:</b>(1-16 of 999999)</p>
+                <button class="pageNumber pageOne">1</button>
+                <button class="pageNumber">2</button>
+                <button class="pageNumber">3</button>
+                <button class="pageNumber">4</button>
+                <button class="pageNumber">5</button>
+            </div>
+            <hr color="#ced4da">
+            <div class="productContainer">
+                <div class="product">
+                    <a href="#"><img src="products/product1.png" class="productImg"></a>
+                    <p align="center" class="productDesc"><span class="newProduct">New!</span> Pikachu with Holiday Cape & Hat || Pokemon Holiday Plush - 14 in</p>
+                    <div class="rating">
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                    </div>
+                    <p align="center" class="productPrice">$39.99</p>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="products/product2.png" class="productImg"></a>
+                    <p align="center" class="productDesc"><span class="newProduct">New!</span> Piplup & Mantyke Pokémon Undersea Holiday Plush - 8 ¾ In.</p>
+                    <div class="rating">
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p align="center" class="productPrice">$27.99</p>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="products/product3.png" class="productImg"></a>
+                    <p align="center" class="productDesc"><span class="newProduct">New!</span> Pawmi Pokémon Holiday Festival Plush - 9 In.</p>
+                    <div class="rating">
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p align="center" class="productPrice">$30.99</p>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="products/product4.png" class="productImg"></a>
+                    <p align="center" class="productDesc"><span class="newProduct">New!</span> Sprigatito Pokémon Holiday Workshop Plush - 8 ¼ In.</p>
+                    <div class="rating">
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                    </div>
+                    <p align="center" class="productPrice">$40.99</p>
+                </div>
+            </div>
+            <div class="productContainer">
+                <div class="product">
+                    <a href="#"><img src="products/product5.png" class="productImg"></a>
+                    <p align="center" class="productDesc"><span class="newProduct">New!</span> Pokémon Tricks & Treats 2023: Gengar Wearing Chef Costume Plush - 7 ½ In.</p>
+                    <div class="rating">
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                    </div>
+                    <p align="center" class="productPrice">$1.99</p>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="products/product6.png" class="productImg"></a>
+                    <p align="center" class="productDesc">Charizard Rising Flames Figure by First 4 Figures</p>
+                    <div class="rating">
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p align="center" class="productPrice">$30.99</p>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="products/product7.png" class="productImg"></a>
+                    <p align="center" class="productDesc">Kotobukiya Hisuian Zorua & Hisuian Zoroark Figure</p>
+                    <div class="rating">
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                    </div>
+                    <p align="center" class="productPrice">$30.99</p>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="products/product8.png" class="productImg"></a>
+                    <p align="center" class="productDesc">Pokémon Legends: Arceus Poké Ball Replica Figure</p>
+                    <div class="rating">
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p align="center" class="productPrice">$60.99</p>
+                </div>
+            </div>
+            <div class="productContainer">
+                <div class="product">
+                    <a href="#"><img src="products/product9.png" class="productImg"></a>
+                    <p align="center" class="productDesc">Story of Mimikyu Pokémon Center × Vic Lee: Pokémon Scary Stories Figure</p>
+                    <div class="rating">
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                    </div>
+                    <p align="center" class="productPrice">$66.66</p>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="products/product10.png" class="productImg"></a>
+                    <p align="center" class="productDesc">Ocean of Friendship Figure</p>
+                    <div class="rating">
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                    </div>
+                    <p align="center" class="productPrice">$240.99</p>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="products/product11.png" class="productImg"></a>
+                    <p align="center" class="productDesc">Pikachu Moods: Annoyed Figure</p>
+                    <div class="rating">
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                    </div>
+                    <p align="center" class="productPrice">$39.99</p>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="products/product12.png" class="productImg"></a>
+                    <p align="center" class="productDesc">Snorlax Holiday Knit Sweater - Adult</p>
+                    <div class="rating">
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p align="center" class="productPrice">$44.99</p>
+                </div>
+            </div>
+            <div class="productContainer">
+                <div class="product">
+                    <a href="#"><img src="products/product13.png" class="productImg"></a>
+                    <p align="center" class="productDesc">Snorlax Sunset Heather Navy Fitted Pullover Hoodie - Adult</p>
+                    <div class="rating">
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                    </div>
+                    <p align="center" class="productPrice">$49.99</p>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="products/product14.png" class="productImg"></a>
+                    <p align="center" class="productDesc">Pokémon TCG: Holiday Calendar (2023)</p>
+                    <div class="rating">
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p align="center" class="productPrice">$40.99</p>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="products/product15.png" class="productImg"></a>
+                    <p align="center" class="productDesc">Pokémon TCG: Scarlet & Violet-Paradox Rift Pokémon Center Elite Trainer Box</p>
+                    <div class="rating">
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                    </div>
+                    <p align="center" class="productPrice">$59.99</p>
+                </div>
+                <div class="product">
+                    <a href="#"><img src="products/product16.png" class="productImg"></a>
+                    <p align="center" class="productDesc">Pokémon TCG: Scarlet & Violet-Paradox Rift 3 Booster Packs & Cetitan Promo Card</p>
+                    <div class="rating">
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star ON"></span>
+                        <span class="fa fa-star"></span>
+                    </div>
+                    <p align="center" class="productPrice">$13.99</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer id="contact">
+        <img class="footerElement" src="pokezard.png" width="150" height="150">
+        <p class="footerElement">Contact: +628118251302</p>
+        <p class="footerElement">Official Youtube: Pokezard</p>
+    </footer>
+</body>
+</html>
